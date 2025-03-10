@@ -1,0 +1,52 @@
+{
+  "name": "multicase-search-transformer",
+  "publisher": "chenjiamian",
+  "displayName": "MultiCase Search Transformer",
+  "description": "自动将搜索词转为驼峰与短横线形式联合正则，提升搜索效率。Automatically convert search terms into a combined regular expression of camelCase and kebab - case for efficient searching.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "command:multicaseSearchTransformer.transformSearch"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "multicaseSearchTransformer.transformSearch",
+        "title": "transformMulticaseSearch(转换搜索词为多Case联合搜索)"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  },
+  "packageManager": "pnpm@9.14.3+sha512.c0f53ee99477ed969b82b289ad011a5d16bf1623c957e7f29eabe8d0c00b574c29b8c7f54f6c67ee710c73f285c8154d07ce44b46fe2c0eeb476a90441bac371",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/your-repo.git"
+  },
+  "keywords": ["search", "regex", "camelcase", "kebabcase"],
+  "license": "MIT"
+}
