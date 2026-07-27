@@ -7,7 +7,9 @@ export function activate(context: vscode.ExtensionContext) {
         async () => {
             const editor = vscode.window.activeTextEditor;
             if (!editor) {
-                vscode.window.showWarningMessage('请先打开文件并定位到要搜索的单词');
+                vscode.window.showWarningMessage(
+                    vscode.l10n.t('Open a file and place the cursor on the word to search for.'),
+                );
                 return;
             }
 
@@ -17,7 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
             const input = wordRange ? document.getText(wordRange) : '';
 
             if (!input) {
-                vscode.window.showWarningMessage('未找到光标处的有效单词');
+                vscode.window.showWarningMessage(vscode.l10n.t('No valid word was found at the cursor.'));
                 return;
             }
             

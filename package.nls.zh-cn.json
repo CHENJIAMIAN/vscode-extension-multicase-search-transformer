@@ -1,0 +1,5 @@
+{
+  "extension.displayName": "多命名风格搜索转换器",
+  "extension.description": "自动将搜索词转换为 camelCase 与 kebab-case 联合正则表达式，提高搜索效率。",
+  "command.transformSearch.title": "搜索 camelCase 与 kebab-case 变体"
+}

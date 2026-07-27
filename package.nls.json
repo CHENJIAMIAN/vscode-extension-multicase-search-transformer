@@ -1,0 +1,5 @@
+{
+  "extension.displayName": "MultiCase Search Transformer",
+  "extension.description": "Convert search terms into a combined camelCase and kebab-case regular expression for efficient searching.",
+  "command.transformSearch.title": "Search camelCase and kebab-case Variants"
+}

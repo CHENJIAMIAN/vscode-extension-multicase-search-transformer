@@ -1,71 +1,39 @@
-# multicase-search-transformer README
+# MultiCase Search Transformer / 多命名风格搜索转换器
 
-This is the README for your extension "multicase-search-transformer". After writing up a brief description, we recommend including the following sections.
+Search camelCase and kebab-case variants of the word under the cursor with one command.
 
-## Features
+一条命令同时搜索光标处单词的 camelCase 与 kebab-case 变体。
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Features / 功能
 
-For example if there is an image subfolder under your extension project workspace:
+- Converts the word under the cursor into camelCase and kebab-case variants.
+- Opens VS Code workspace search with a combined regular expression.
+- Removes duplicate variants automatically.
+- Provides localized English and Simplified Chinese commands and messages.
 
-\!\[feature X\]\(images/feature-x.png\)
+- 将光标处的单词转换为 camelCase 与 kebab-case 变体。
+- 使用联合正则表达式打开 VS Code 工作区搜索。
+- 自动去除重复变体。
+- 命令与提示信息支持英文和简体中文。
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage / 使用方法
 
-## Requirements
+1. Place the cursor on a camelCase or kebab-case word.
+2. Run `MultiCase Search Transformer: Search camelCase and kebab-case Variants` from the Command Palette.
+3. Review all matching variants in the Search view.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. 将光标放在 camelCase 或 kebab-case 单词上。
+2. 从命令面板运行“多命名风格搜索转换器: 搜索 camelCase 与 kebab-case 变体”。
+3. 在搜索视图中查看所有匹配结果。
 
-## Extension Settings
+## Development / 开发
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+```powershell
+npm ci
+npm run compile
+npm test
+```
 
-For example:
+## License / 许可证
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+MIT
