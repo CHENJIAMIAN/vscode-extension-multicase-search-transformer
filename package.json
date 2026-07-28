@@ -3,7 +3,7 @@
   "publisher": "chenjiamian",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.98.0"
   },
@@ -47,6 +47,11 @@
     "type": "git",
     "url": "https://github.com/yourusername/your-repo.git"
   },
-  "keywords": ["search", "regex", "camelcase", "kebabcase"],
+  "keywords": [
+    "search",
+    "regex",
+    "camelcase",
+    "kebabcase"
+  ],
   "license": "MIT"
 }
