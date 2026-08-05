@@ -1,5 +1,12 @@
 # MultiCase Search Transformer / 多命名风格搜索转换器
 
+<!-- codex-github-rules:bilingual-summary -->
+> **中文简介**：VS Code 多条件搜索转换扩展
+
+> **English summary**: A VS Code extension for transforming multi-condition searches
+
+---
+
 Search camelCase and kebab-case variants of the word under the cursor with one command.
 
 一条命令同时搜索光标处单词的 camelCase 与 kebab-case 变体。
